@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Blogs by Amrudha Shree: travel stories from India and Europe, creative notes, and reflections across engineering and art.">
+  <meta name="theme-color" content="#FBF8F3">
+  <title>Blogs · Amrudha Shree</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body class="page-blog">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <div class="watercolor-backdrop" aria-hidden="true">
+    <div class="wash wash--honey" data-parallax="0.02"></div>
+    <div class="wash wash--sage" data-parallax="-0.02"></div>
+    <div class="wash wash--blush" data-parallax="0.025"></div>
+  </div>
+
+  <!-- Shared Top Navigation Bar -->
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a href="./index.html" class="brand" aria-label="Amrudha Shree Home">
+        <span class="brand__name">Amrudha Shree</span>
+      </a>
+
+      <nav class="primary-nav" aria-label="Primary navigation">
+        <a href="./index.html" class="nav-link">Home</a>
+        <a href="./journey.html" class="nav-link">My Story</a>
+        <a href="./atelier.html" class="nav-link">Art &amp; Craft</a>
+        <a href="./blog.html" class="nav-link is-active" aria-current="page">Blog</a>
+        <a href="./contact.html" class="nav-link">Say Hello</a>
+      </nav>
+
+      <div class="header-actions">
+        <button
+          type="button"
+          class="theme-toggle-btn"
+          id="theme-toggle"
+          aria-label="Switch to soft evening lighting"
+          title="Switch day or evening studio light"
+        >
+          <svg class="icon-sun" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path>
+          </svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <span class="theme-toggle-btn__label" id="theme-toggle-label">Evening</span>
+        </button>
+
+        <button
+          type="button"
+          class="mobile-menu-btn"
+          id="mobile-menu-btn"
+          aria-expanded="false"
+          aria-controls="mobile-drawer"
+          aria-label="Open menu"
+        >
+          <svg class="menu-icon-open" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
+            <line x1="4" y1="8" x2="20" y2="8"></line>
+            <line x1="4" y1="16" x2="20" y2="16"></line>
+          </svg>
+          <svg class="menu-icon-close" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-drawer" id="mobile-drawer" hidden>
+      <nav class="mobile-drawer__nav" aria-label="Mobile navigation">
+        <a href="./index.html" class="mobile-nav-link">Home</a>
+        <a href="./journey.html" class="mobile-nav-link">My Story</a>
+        <a href="./atelier.html" class="mobile-nav-link">Art &amp; Craft</a>
+        <a href="./blog.html" class="mobile-nav-link is-active" aria-current="page">Blog</a>
+        <a href="./contact.html" class="mobile-nav-link">Say Hello</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" class="page-bloom">
+    <section class="blog-page">
+      <div class="container">
+        <div class="page-heading" data-reveal="up">
+          <p class="hand-note">Blogs</p>
+          <h1 class="page-title">Stories From the Trail &amp; Studio</h1>
+          <div class="title-brushstroke" aria-hidden="true">
+            <svg class="brush-svg" viewBox="0 0 320 28" fill="none">
+              <path class="brush-wash brush-wash--primary" d="M6 17 C68 9, 148 23, 224 13 C262 8, 294 14, 312 12" />
+              <path class="brush-wash brush-wash--honey" d="M16 21 C88 15, 178 24, 292 15" />
+            </svg>
+            <svg class="brush-tip-icon" viewBox="0 0 28 28" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 4L10 16"></path>
+              <path d="M10 16c-2.5 0-4.5 1.8-4.5 4.2 0 1-.4 1.8-1.5 2.4 2.6.5 5.4-.2 6.8-2.2.7-1 .6-2.4-.8-4.4z" fill="currentColor" fill-opacity="0.28"></path>
+            </svg>
+          </div>
+          <p class="page-lead">
+            Personal essays and visual journals from travels across India and Europe, creative evenings with yarn and paint, and life across engineering and slow craft.
+          </p>
+        </div>
+
+        <!-- Scalable Topic Filter Pills -->
+        <div class="blog-topic-tabs" id="blog-topic-tabs" role="tablist" aria-label="Filter blog articles by topic" data-reveal="up" data-delay="60">
+          <button type="button" class="gallery-pill is-active" data-blog-topic="all" role="tab" aria-selected="true">All Stories</button>
+          <button type="button" class="gallery-pill" data-blog-topic="travel" role="tab" aria-selected="false">Travel</button>
+          <button type="button" class="gallery-pill" data-blog-topic="craft" role="tab" aria-selected="false">Art &amp; Craft</button>
+          <button type="button" class="gallery-pill" data-blog-topic="life" role="tab" aria-selected="false">Everyday Notes</button>
+          <button type="button" class="gallery-pill" data-blog-topic="engineering" role="tab" aria-selected="false">Engineering</button>
+        </div>
+
+        <!-- Article Cards Grid -->
+        <div class="blog-posts-grid" id="blog-posts-grid">
+          <article class="blog-featured-card blog-post-card" data-topic="travel" data-reveal="up" data-delay="90">
+            <a href="./blog/north-india-trek.html" class="blog-featured-media" aria-label="Read From Warm Coimbatore to Freezing Himalayan Peaks">
+              <img
+                src="./assets/blog/north-india-trek/cover-himalayan-trek.jpg"
+                alt="Amrudha Shree resting on a rocky Himalayan ridge overlooking pine forests and snow-capped mountain peaks"
+                class="blog-trek-cover"
+                width="1600"
+                height="1067"
+                loading="eager"
+                decoding="async"
+              >
+              <span class="blog-cover-pill">38 Trail Photos</span>
+            </a>
+
+            <div class="blog-featured-body">
+              <div class="card-meta-row">
+                <span class="timeline-pill">Travel Story &amp; Beginner Guide</span>
+                <span class="blog-meta-date">May 2023 · 10 min read</span>
+              </div>
+
+              <h2>
+                <a href="./blog/north-india-trek.html">
+                  From Warm Coimbatore to Freezing Himalayan Peaks: My First North India Trek
+                </a>
+              </h2>
+
+              <p class="blog-excerpt">
+                Living in warm South India, I had never experienced mountain snow, freezing wind, or a multi-day climb. Here is our honest journey from Coimbatore to Devprayag Sangam, Chopta camp at 2°C, the 4,000-meter climb up Chandrashila Peak, Tungnath Temple, four steep hours to Deoriatal Lake, and 16 km rafting in Rishikesh without knowing how to swim.
+              </p>
+
+              <p class="blog-route-line">
+                Route: Coimbatore → Delhi → Devprayag → Chopta → Chandrashila → Tungnath → Deoriatal → Rishikesh
+              </p>
+
+              <div class="blog-featured-footer">
+                <a href="./blog/north-india-trek.html" class="btn-pill btn-pill--primary">
+                  <span>Read the Full Story</span>
+                  <span class="btn-arrow" aria-hidden="true">→</span>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Empty State for Future Topics -->
+        <div class="blog-empty-topic" id="blog-empty-state" hidden>
+          <span class="hand-note">On the studio desk</span>
+          <h3>More stories coming soon</h3>
+          <button type="button" class="btn-pill btn-pill--soft" onclick="document.querySelector('[data-blog-topic=&quot;all&quot;]').click()">
+            Show All Stories
+          </button>
+        </div>
+
+        <!-- About the Author / Writer Profile Card -->
+        <aside class="blog-author-card" data-reveal="up" data-delay="120">
+          <div class="blog-author-avatar">
+            <img
+              src="./assets/profile/amrudha-author.jpg"
+              alt="Amrudha Shree sitting thoughtfully at a wooden table by a sunlit window"
+              width="900"
+              height="1200"
+              loading="lazy"
+              decoding="async"
+            >
+          </div>
+          <div class="blog-author-copy">
+            <span class="hand-note hand-note--small">About the author</span>
+            <h2>Amrudha Shree</h2>
+            <p>
+              Biomedical engineer, regulatory affairs specialist, painter, and slow-craft maker based in the Netherlands. Outside hospital equipment lifecycles and EU dossiers, I write honest field notes about stepping outside comfort zones on mountain trails and making things by hand.
+            </p>
+            <div class="blog-author-links">
+              <a href="./atelier.html" class="role-jump-btn">Explore Art &amp; Craft →</a>
+              <a href="./contact.html" class="role-jump-btn">Say Hello →</a>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>Crafted with warmth · Based in the Netherlands</p>
+      <div class="footer-right">
+        <span class="footer-hand">Amrudha Shree</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+# Local source originals, raw exports, CV, archives & local dev helpers
+others/
+
+# Tooling & OS files
+node_modules/
+.DS_Store
+Thumbs.db
